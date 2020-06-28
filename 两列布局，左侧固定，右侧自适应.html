@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两(3)列布局，左侧固定，右侧自适应</title>
+    <style>
+        body{
+            margin: 0;
+
+        }
+        #parent{
+            display: flex;
+
+        }
+        #left{
+            width: 300px;
+            height: 400px;
+            background: red;
+        }
+        #center{
+            height: 400px;
+            background: green;
+            flex-grow: 1;
+        }
+        #right{
+            width: 300px;
+            height: 400px;
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="left"></div>
+    <div id="center"></div>
+    <div id="right"></div>
+
+</div>
+
+</body>
+</html>
